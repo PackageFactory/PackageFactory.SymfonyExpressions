@@ -1,0 +1,3 @@
+PackageFactory_SymfonyExpressions_Expressions:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  backend: Neos\Cache\Backend\FileBackend

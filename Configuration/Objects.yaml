@@ -1,0 +1,9 @@
+PackageFactory\SymfonyExpressions\Evaluator\SymfonyExpressionEvaluator:
+  properties:
+    parsedExpressionCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: PackageFactory_SymfonyExpressions_Expressions

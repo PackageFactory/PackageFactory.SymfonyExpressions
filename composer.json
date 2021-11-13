@@ -1,0 +1,21 @@
+{
+    "description": "Symfony Expressions for Neos.Fusion",
+    "type": "neos-package",
+    "name": "packagefactory/symfonyexpressions",
+    "license": "GPL-3.0-or-later",
+    "require": {
+        "neos/flow": "*",
+        "neos/cache": "*",
+        "symfony/expression-language": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "PackageFactory\\SymfonyExpressions\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "PackageFactory.SymfonyExpressions"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+PackageFactory:
+  SymfonyExpressions:
+    helpers:
+
+      #
+      # Those helper are port of eel helpers with static methods
+      #
+      String: 'PackageFactory\SymfonyExpressions\Helper\StringHelper'
+      Array: 'PackageFactory\SymfonyExpressions\Helper\ArrayHelper'
+      Date: 'PackageFactory\SymfonyExpressions\Helper\DateHelper'
+      #
+      # Not working yet, how do we define fluent interfaces ;-/
+      #
+      FlowQuery: 'PackageFactory\SymfonyExpressions\Helper\FlowQueryHelper'
+
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        "PackageFactory.SymfonyExpressions": true
