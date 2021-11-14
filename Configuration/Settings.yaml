@@ -38,3 +38,6 @@ Neos:
     fusion:
       autoInclude:
         "PackageFactory.SymfonyExpressions": true
+  Fusion:
+    dsl:
+      sx: PackageFactory\SymfonyExpressions\Dsl\SymfonyExpressionDslImplementation

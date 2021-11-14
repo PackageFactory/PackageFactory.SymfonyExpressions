@@ -13,6 +13,9 @@ The most important deviation from eel is that Strings are concatenated via `~` l
 The `sx:` prefix works in afx aswell ``afx`<tag atttribute={sx:...}>{sx:...}</tag>` ``.
 Even the fluent syntax of FlowQuery is supported `${sx:q(node).closest('[instanceof Neos.Neos:Document]').property("title")}`.
 
+The `sx` prefix is also registered as dsl so `${sx:...}` is equivalent to ``sx`...` ``. While this is technically cleaner it does
+not work inside of afx.
+
 Note: The `sx:` prefix was the easiest way to implement a working prototype for Fusion and Afx. 
 If this ever becomes a language feature this should be discussed in detail and probably another solution will be found. 
 
