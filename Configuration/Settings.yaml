@@ -1,17 +1,37 @@
 PackageFactory:
   SymfonyExpressions:
-    helpers:
 
-      #
-      # Those helper are port of eel helpers with static methods
-      #
-      String: 'PackageFactory\SymfonyExpressions\Helper\StringHelper'
-      Array: 'PackageFactory\SymfonyExpressions\Helper\ArrayHelper'
-      Date: 'PackageFactory\SymfonyExpressions\Helper\DateHelper'
-      #
-      # Not working yet, how do we define fluent interfaces ;-/
-      #
-      FlowQuery: 'PackageFactory\SymfonyExpressions\Helper\FlowQueryHelper'
+    #
+    # Class names of helper objects that should always be present in the expression context.
+    #
+    helpers:
+      String: 'Neos\Eel\Helper\StringHelper'
+      Array: 'Neos\Eel\Helper\ArrayHelper'
+      Date: 'Neos\Eel\Helper\DateHelper'
+      Configuration: 'Neos\Eel\Helper\ConfigurationHelper'
+      Math: 'Neos\Eel\Helper\MathHelper'
+      Json: 'Neos\Eel\Helper\JsonHelper'
+      Security: 'Neos\Eel\Helper\SecurityHelper'
+      Translation: 'Neos\Flow\I18n\EelHelper\TranslationHelper'
+      StaticResource: 'Neos\Flow\ResourceManagement\EelHelper\StaticResourceHelper'
+      Type: 'Neos\Eel\Helper\TypeHelper'
+      I18n: 'Neos\Flow\I18n\EelHelper\TranslationHelper'
+      File: 'Neos\Eel\Helper\FileHelper'
+      BaseUri: 'Neos\Fusion\Eel\BaseUriHelper'
+
+    #
+    # Class names of function providers implementing the ExpressionFunctionProviderInterface
+    # @see: https://symfony.com/doc/current/components/expression_language/extending.html
+    #
+    providers: []
+
+    #
+    # Functions that are either static functions with namespaces or static methods of classes
+    # - static class method  `name: 'Name\Space::method'`
+    # - static function `name: 'Name\Space\method'``
+    #
+    functions:
+      q: 'Neos\Eel\FlowQuery\FlowQuery::q'
 
 Neos:
   Neos:
