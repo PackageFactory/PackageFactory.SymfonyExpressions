@@ -101,12 +101,12 @@ prototype instead of the eel expression.
 
 The fusion code:
 ```
-value = ${sx:"hello world"}
+value = ${sx:"hello" ~ " world"}
 ```
 is transpiled as:
 ```
 value = PackageFactory.SymfonyExpressions:Expression {
-    expression = "$codeInQuotes"
+    expression = "\"hello\" ~ \" world\""
 }
 ```
 
