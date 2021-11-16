@@ -101,7 +101,7 @@ prototype instead of the eel expression.
 
 The fusion code:
 ```
-value = ${sc:"hello world"}
+value = ${sx:"hello world"}
 ```
 is transpiled as:
 ```
